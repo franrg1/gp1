@@ -11,6 +11,8 @@ import matplotlib
 import json
 import aijobdescription
 
+app = Flask(__name__)
+
 with open('./cuervo-mapping.json', 'r') as fp:
     mappings = json.load(fp)
 def create_context(question, index, max_len=3750, size="babbage"):
