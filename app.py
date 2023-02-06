@@ -11,7 +11,7 @@ import matplotlib
 import json
 import aijobdescription
 
-with open('D:/Users/julian.monis/chatgptpython/ai-content-starting-template/cuervo-mapping.json', 'r') as fp:
+with open('./cuervo-mapping.json', 'r') as fp:
     mappings = json.load(fp)
 def create_context(question, index, max_len=3750, size="babbage"):
     """
